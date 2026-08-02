@@ -1,0 +1,486 @@
+/* ==========================================
+   Google Font
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   Global
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.7;
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
+.custom-navbar{
+    background:#0f172a;
+    padding:15px 0;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:700;
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+/* ==========================================
+   Hero
+========================================== */
+
+.hero{
+    padding:130px 0 80px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    color:#0f172a;
+}
+
+.hero h3{
+    color:#2563eb;
+    line-height:1.5;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline-primary:hover{
+    color:#fff;
+}
+
+/* ==========================================
+   Profile Image
+========================================== */
+
+.profile-image{
+
+    width:350px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.profile-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   Social Icons
+========================================== */
+
+.social-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:50px;
+
+    height:50px;
+
+    margin-right:15px;
+
+    border-radius:50%;
+
+    background:#0f172a;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Section Title
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#2563eb;
+
+    display:block;
+
+    margin:15px auto;
+
+    border-radius:50px;
+
+}
+
+/* ==========================================
+   About
+========================================== */
+
+#about{
+
+    background:white;
+
+}
+
+#about p{
+
+    font-size:18px;
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   Skills
+========================================== */
+
+.skill-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    margin-bottom:30px;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-card i{
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.skill-card h4{
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   Contact
+========================================== */
+
+#contact{
+
+    background:white;
+
+}
+
+#contact h5{
+
+    margin-top:20px;
+
+    font-weight:600;
+
+}
+
+#contact p{
+
+    color:#475569;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:25px 0;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    margin:0;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+    .hero{
+
+        text-align:center;
+
+        padding-top:150px;
+
+    }
+
+    .profile-image{
+
+        width:280px;
+
+        height:280px;
+
+        margin-top:40px;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section-title{
+
+        font-size:30px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero h3{
+
+        font-size:24px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .profile-image{
+
+        width:230px;
+
+        height:230px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero{
+
+        padding-top:120px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:15px;
+
+    }
+
+    .social-icons a{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:18px;
+
+        margin-right:10px;
+
+    }
+
+}
+/* ==========================================
+   Active Navbar Link
+========================================== */
+
+.nav-link.active{
+
+    color:#38bdf8 !important;
+}
+
+/* ==========================================
+   Scroll To Top Button
+========================================== */
+
+#scrollTopBtn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    transition:.3s;
+
+}
+
+#scrollTopBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Fade Animation
+========================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
