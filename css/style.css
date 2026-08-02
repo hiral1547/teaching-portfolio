@@ -19,9 +19,10 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f8fafc;
-    color:#1e293b;
-    line-height:1.7;
+    background:#FAFAF9;
+    color:#4B5563;
+    line-height:1.6;
+    font-size:16px;
 }
 
 /* ==========================================
@@ -29,7 +30,7 @@ body{
 ========================================== */
 
 .custom-navbar{
-    background:#0f172a;
+    background:#1E3A8A;
     padding:15px 0;
     transition:.3s;
 }
@@ -38,12 +39,14 @@ body{
     font-size:1.6rem;
     font-weight:700;
     color:#fff !important;
+    font-size:24px;
 }
 
 .nav-link{
     color:#fff !important;
     margin-left:20px;
     transition:.3s;
+    font-size:15px;
 }
 
 .nav-link:hover{
@@ -55,24 +58,198 @@ body{
 ========================================== */
 
 .hero{
+
     padding:130px 0 80px;
+
     min-height:100vh;
+
     display:flex;
+
     align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #EEF2FF 0%,
+        #FAFAF9 100%
+    );
+
 }
 
 .hero h1{
-    color:#0f172a;
+    color:#1E3A8A;
+    font-size:48px;
+    font-weight:700;
 }
 
 .hero h3{
-    color:#2563eb;
+    color:#D4A017;
     line-height:1.5;
+    font-size:24px;
+    font-weight:600;
 }
 
 .hero p{
     margin-top:20px;
-    font-size:18px;
+    font-size:17px;
+}
+.experience-info{
+
+    text-align:right;
+
+}
+
+.experience-info span{
+
+    display:block;
+
+    color:#6B7280;
+
+    font-size:15px;
+
+    margin-bottom:5px;
+
+}
+
+.experience-summary{
+
+    font-size:15px;
+
+    color:#4B5563;
+
+    margin:20px 0;
+
+}
+
+.experience-card h6{
+
+    color:#1E3A8A;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.achievement-box{
+
+    background:#FFF8E1;
+
+    border-left:5px solid #D4A017;
+
+    padding:15px 20px;
+
+    margin-top:25px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+.experience-card{
+
+    background:white;
+
+    border-left:6px solid #D4A017;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.experience-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    margin-bottom:20px;
+
+}
+
+.experience-header h3{
+
+    color:#1E3A8A;
+     font-size:24px;
+    font-weight:700;
+
+}
+
+.experience-header h5{
+
+    color:#6B7280;
+
+}
+
+.experience-date{
+
+    background:#D4A017;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.experience-card ul{
+
+    padding-left:20px;
+
+}
+
+.experience-card ul li{
+
+    margin-bottom:10px;
+
+}
+
+.experience-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.experience-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:500;
+
 }
 
 /* ==========================================
@@ -80,12 +257,12 @@ body{
 ========================================== */
 
 .btn-primary{
-    background:#2563eb;
+    background:#D4A017;
     border:none;
 }
 
 .btn-primary:hover{
-    background:#1d4ed8;
+    background:#B8860B;
 }
 
 .btn-outline-primary:hover{
@@ -139,7 +316,7 @@ body{
 
     border-radius:50%;
 
-    background:#0f172a;
+    background:#1E3A8A;
 
     color:white;
 
@@ -153,7 +330,7 @@ body{
 
 .social-icons a:hover{
 
-    background:#2563eb;
+    background:#D4A017;
 
     transform:translateY(-5px);
 
@@ -169,11 +346,11 @@ body{
 
     margin-bottom:50px;
 
-    font-size:38px;
+    font-size:32px;
 
     font-weight:700;
 
-    color:#0f172a;
+    color:#1E3A8A;
 
     position:relative;
 
@@ -187,13 +364,23 @@ body{
 
     height:4px;
 
-    background:#2563eb;
+    background:#D4A017;
 
     display:block;
 
     margin:15px auto;
 
     border-radius:50px;
+
+}
+
+.section-subtitle{
+
+    font-size:16px;
+
+    color:#6B7280;
+
+    margin-top:-10px;
 
 }
 
@@ -227,25 +414,29 @@ body{
 
 .skill-card{
 
-    background:white;
+    background:#ffffff;
 
     padding:35px;
 
-    border-radius:15px;
+    border-radius:16px;
 
     text-align:center;
 
+    width:100%;
+
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 
-    transition:.3s;
+    transition:all .3s ease;
 
-    margin-bottom:30px;
+    border-bottom:5px solid transparent;
 
 }
 
 .skill-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
+
+    border-bottom:5px solid #D4A017;
 
 }
 
@@ -253,7 +444,7 @@ body{
 
     font-size:45px;
 
-    color:#2563eb;
+    color:#1E3A8A;
 
     margin-bottom:20px;
 
@@ -261,9 +452,57 @@ body{
 
 .skill-card h4{
 
-    margin-bottom:20px;
-
     font-weight:600;
+
+    margin-bottom:25px;
+    font-size:22px;
+
+    color:#1F2937;
+
+}
+/* ==========================
+   Skill Badges
+========================== */
+
+.skill-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.skill-badges span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.skill-badges span:hover{
+
+    background:#D4A017;
+
+    color:white;
+
+    transform:scale(1.08);
 
 }
 
@@ -297,7 +536,7 @@ body{
 
 footer{
 
-    background:#0f172a;
+    background:#1E3A8A;
 
     color:white;
 
@@ -439,7 +678,7 @@ footer p{
 
     border-radius:50%;
 
-    background:#2563eb;
+    background:#D4A017;
 
     color:white;
 
@@ -457,7 +696,7 @@ footer p{
 
 #scrollTopBtn:hover{
 
-    background:#1d4ed8;
+    background:#B8860B;
 
     transform:translateY(-5px);
 

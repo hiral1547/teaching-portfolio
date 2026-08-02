@@ -1,379 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Your Name | Teaching Portfolio</title>
+    <title>Hiral Patel | Teaching Portfolio</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> Hiral Patel </a>
 
-        <div class="container">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand fw-bold" href="#">
-                Your Name
-            </a>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse"
-                data-bs-target="#navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
 
-            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
 
-            <div class="collapse navbar-collapse" id="navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
 
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
 
     <!-- ================= HERO ================= -->
 
     <section id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h5 class="text-primary">Hello, I'm</h5>
 
-        <div class="container">
+            <h1 class="display-4 fw-bold">Hiral Patel</h1>
 
-            <div class="row align-items-center">
+            <h3 class="text-secondary mb-4">
+              Teaching Assistant / <br />
+              Lecturer in Computer Science
+            </h3>
 
-                <div class="col-lg-6">
+            <p class="lead">
+              Passionate about teaching Computer Science, Artificial
+              Intelligence, Machine Learning, Programming and Web Development.
+            </p>
 
-                    <h5 class="text-primary">
-                        Hello, I'm
-                    </h5>
+            <div class="mt-4">
+              <a
+                href="documents/Resume.pdf"
+                class="btn btn-primary btn-lg me-2"
+                target="_blank"
+              >
+                <i class="fa-solid fa-download"></i>
 
-                    <h1 class="display-4 fw-bold">
-                        Your Name
-                    </h1>
+                Resume
+              </a>
 
-                    <h3 class="text-secondary mb-4">
-
-                        Teaching Assistant <br>
-
-                        Software Developer <br>
-
-                        AI Enthusiast
-
-                    </h3>
-
-                    <p class="lead">
-
-                        Passionate about teaching Computer Science,
-                        Artificial Intelligence,
-                        Machine Learning,
-                        Programming and Web Development.
-
-                    </p>
-
-                    <div class="mt-4">
-
-                        <a href="documents/Resume.pdf"
-                            class="btn btn-primary btn-lg me-2"
-                            target="_blank">
-
-                            <i class="fa-solid fa-download"></i>
-
-                            Resume
-
-                        </a>
-
-                        <a href="#contact"
-                            class="btn btn-outline-primary btn-lg">
-
-                            Contact Me
-
-                        </a>
-
-                    </div>
-
-                    <div class="social-icons mt-4">
-
-                        <a href="#" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-
-                        <a href="#" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-
-                        <a href="#" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-
-                        <a href="#">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6 text-center">
-
-                    <img src="images/profile.jpg"
-                        class="img-fluid profile-image"
-                        alt="Profile">
-
-                </div>
-
+              <a href="#contact" class="btn btn-outline-primary btn-lg">
+                Contact Me
+              </a>
             </div>
 
-        </div>
+            <div class="social-icons mt-4">
+              <a href="https://github.com/hiral1547" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
 
+              <a
+                href="https://www.linkedin.com/in/hiral-patel-832691148"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a href="https://www.youtube.com/@RapidNotes-23" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+
+              <a href="mailto:hiral1547@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img
+              src="images/profile.jpg"
+              class="img-fluid profile-image"
+              alt="Profile"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ================= ABOUT ================= -->
 
     <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
 
-        <div class="container">
+        <p>
+          I am passionate about teaching Computer Science and developing
+          educational content. I enjoy helping students understand difficult
+          concepts through practical examples, projects, and concise video
+          lectures.
+        </p>
 
-            <h2 class="section-title">
+        <p>
+          I am actively seeking Teaching Assistant and Lecturer opportunities in
+          UAE.
+        </p>
+      </div>
+    </section>
 
-                About Me
+    <!-- ================= EXPERIENCE ================= -->
 
-            </h2>
+    <section id="experience" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">
+            My professional journey in teaching and software development.
+          </p>
+        </div>
 
-            <p>
+        <div class="experience-card">
 
-                I am passionate about teaching Computer Science
-                and developing educational content.
+    <!-- Header -->
 
-                I enjoy helping students understand difficult concepts
-                through practical examples, projects,
-                and concise video lectures.
+    <div class="experience-header">
 
-            </p>
+        <div>
 
-            <p>
+            <h3>
+                <i class="fas fa-chalkboard-user"></i>
+                Teaching Assistant
+            </h3>
 
-                I am actively seeking Teaching Assistant
-                and Lecturer opportunities in UAE universities.
-
-            </p>
+            <h5>
+                CHARUSAT University
+            </h5>
 
         </div>
 
-    </section>
+        <div class="experience-info">
 
-    <!-- ================= SKILLS ================= -->
+            <span>
+                📅 Jan 2025 - Present
+            </span>
 
-    <section id="skills" class="py-5 bg-light">
+            <span>
+                📍 Gujarat, India
+            </span>
 
-        <div class="container">
+        </div>
 
-            <h2 class="section-title">
+    </div>
 
-                Skills
+    <hr>
 
-            </h2>
+    <div class="experience-summary">
 
-            <div class="row">
+        Assisted faculty members in conducting laboratory sessions,
+        mentoring undergraduate students, evaluating assignments,
+        preparing teaching material, and supporting practical learning.
 
-                <div class="col-md-4">
+    </div>
 
-                    <div class="skill-card">
+    <div class="row mt-4">
 
-                        <i class="fas fa-code"></i>
+        <div class="col-lg-7">
 
-                        <h4>Programming</h4>
+            <h6>Responsibilities</h6>
 
-                        <p>
+            <ul>
 
-                            Python<br>
+                <li>Conducted Practical Sessions</li>
 
-                            Java<br>
+                <li>Guided Students</li>
 
-                            C<br>
+                <li>Prepared Lab Manuals</li>
 
-                            C++<br>
+                <li>Evaluated Assignments</li>
 
-                            JavaScript
+                <li>Mentored Final Year Students</li>
 
-                        </p>
+            </ul>
 
-                    </div>
+        </div>
 
-                </div>
+        <div class="col-lg-5">
 
-                <div class="col-md-4">
+            <h6>Subjects</h6>
 
-                    <div class="skill-card">
+            <div class="experience-tags">
 
-                        <i class="fas fa-brain"></i>
+                <span>Python</span>
 
-                        <h4>AI & ML</h4>
+                <span>Java</span>
 
-                        <p>
+                <span>DBMS</span>
 
-                            Artificial Intelligence<br>
+                <span>Operating Systems</span>
 
-                            Machine Learning<br>
+                <span>AI</span>
 
-                            Deep Learning<br>
-
-                            Computer Vision
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="skill-card">
-
-                        <i class="fas fa-globe"></i>
-
-                        <h4>Web Development</h4>
-
-                        <p>
-
-                            HTML<br>
-
-                            CSS<br>
-
-                            Bootstrap<br>
-
-                            jQuery<br>
-
-                            PHP
-
-                        </p>
-
-                    </div>
-
-                </div>
+                <span>Machine Learning</span>
 
             </div>
 
         </div>
 
+    </div>
+
+    <div class="achievement-box">
+
+        ⭐ Mentored 100+ students and assisted faculty in delivering
+        practical computer science courses.
+
+    </div>
+
+</div>
+
+        
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4 d-flex">
+            <div class="skill-card w-100">
+              <i class="fas fa-chalkboard-user"></i>
+
+              <h4>Teaching Expertise</h4>
+
+              <div class="skill-badges">
+                <span>Python</span>
+                <span>DBMS</span>
+                <span>Operating Systems</span>
+                <span>Artificial Intelligence</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI -->
+
+          <div class="col-md-4 d-flex">
+            <div class="skill-card w-100">
+              <i class="fas fa-brain"></i>
+
+              <h4>AI & Machine Learning</h4>
+
+              <div class="skill-badges">
+                <span>Artificial Intelligence</span>
+                <span>Machine Learning</span>
+                <span>Computer Vision</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web -->
+
+          <div class="col-md-4 d-flex">
+            <div class="skill-card w-100">
+              <i class="fas fa-globe"></i>
+
+              <h4>Web Development</h4>
+
+              <div class="skill-badges">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
 
-        <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5>Email</h5>
 
-            <h2 class="section-title">
+            <p>hiral1547@gmail.com</p>
 
-                Contact
+            <h5>Location</h5>
 
-            </h2>
+            <p>India</p>
+          </div>
 
-            <div class="row">
+          <div class="col-lg-6">
+            <h5>Let's Connect</h5>
 
-                <div class="col-lg-6">
+            <a
+              href="https://github.com/hiral1547"
+              class="btn btn-dark m-2"
+              target="_blank"
+            >
+              GitHub
+            </a>
 
-                    <h5>Email</h5>
+            <a
+              href="https://www.linkedin.com/in/hiral-patel-832691148"
+              class="btn btn-primary m-2"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
 
-                    <p>
-
-                        yourmail@gmail.com
-
-                    </p>
-
-                    <h5>Location</h5>
-
-                    <p>
-
-                        India
-
-                    </p>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <h5>
-
-                        Let's Connect
-
-                    </h5>
-
-                    <a href="#" class="btn btn-dark m-2">
-
-                        GitHub
-
-                    </a>
-
-                    <a href="#" class="btn btn-primary m-2">
-
-                        LinkedIn
-
-                    </a>
-
-                    <a href="#" class="btn btn-danger m-2">
-
-                        RapidNotes
-
-                    </a>
-
-                </div>
-
-            </div>
-
+            <a
+              href="https://www.youtube.com/@RapidNotes-23"
+              class="btn btn-danger m-2"
+              target="_blank"
+            >
+              RapidNotes
+            </a>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <!-- ================= FOOTER ================= -->
 
     <footer>
-
-        <div class="container text-center">
-
-            <p>
-
-                © 2026 Your Name |
-                Teaching Portfolio
-
-            </p>
-
-        </div>
-
+      <div class="container text-center">
+        <p>© 2026 Hiral Patel | Teaching Portfolio</p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -387,7 +399,5 @@
     <!-- JS -->
 
     <script src="js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
