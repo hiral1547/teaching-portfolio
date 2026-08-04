@@ -53,44 +53,403 @@ body{
     color:#38bdf8 !important;
 }
 
-/* ==========================================
-   Hero
-========================================== */
+/*======================================
+            HERO
+======================================*/
 
 .hero{
 
-    padding:130px 0 80px;
+padding:90px 0 70px;
 
-    min-height:100vh;
+background:#F8FAFC;
 
-    display:flex;
+}
 
-    align-items:center;
+.hero-box{
 
-    background:linear-gradient(
-        135deg,
-        #EEF2FF 0%,
-        #FAFAF9 100%
-    );
+background:#fff;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.availability{
+
+font-size:14px;
+
+color:#666;
+
+margin-bottom:15px;
 
 }
 
 .hero h1{
+
+font-size:38px;
+
+font-weight:700;
+
+color:#1E3A8A;
+
+margin-bottom:8px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+font-weight:500;
+
+color:#555;
+
+margin-bottom:18px;
+
+}
+
+.hero-text{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.hero-skills{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin:25px 0;
+
+}
+
+.hero-skills span{
+
+background:#EEF2FF;
+
+color:#1E3A8A;
+
+padding:8px 14px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+.hero-skills i{
+
+color:#D4A017;
+
+margin-right:5px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:12px;
+
+margin-bottom:20px;
+
+}
+
+.hero-social{
+
+display:flex;
+
+gap:15px;
+
+margin-top:10px;
+
+}
+
+.hero-social a{
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#EEF2FF;
+
+border-radius:50%;
+
+color:#1E3A8A;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.hero-social a:hover{
+
+background:#1E3A8A;
+
+color:#fff;
+
+}
+
+.profile-card{
+
+text-align:center;
+
+}
+
+.profile-image{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid #1E3A8A;
+
+margin:auto;
+
+display:block;
+
+}
+
+.profile-card h4{
+
+margin-top:20px;
+
+font-size:20px;
+
+}
+
+.profile-info{
+
+text-align:left;
+
+margin-top:20px;
+
+}
+
+.profile-info div{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:10px 0;
+
+border-bottom:1px solid #eee;
+
+font-size:14px;
+
+}
+
+.stat-box{
+
+background:#fff;
+
+padding:20px;
+
+text-align:center;
+
+border-radius:14px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+height:100%;
+
+}
+
+.stat-box h3{
+
+font-size:28px;
+
+color:#1E3A8A;
+
+margin-bottom:5px;
+
+}
+
+.stat-box p{
+
+margin:0;
+
+font-size:14px;
+
+}
+/* EXPERIENCE */
+
+.timeline{
+
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:15px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#d6d6d6;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:50px;
+
+    margin-bottom:30px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:6px;
+
+    top:18px;
+
+    width:18px;
+
+    height:18px;
+
+    background:#1E3A8A;
+
+    border-radius:50%;
+
+    border:4px solid #fff;
+
+    box-shadow:0 0 0 2px #1E3A8A;
+
+}
+
+.timeline-card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:22px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.timeline-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    border-bottom:1px solid #eee;
+
+    padding-bottom:12px;
+
+}
+
+.timeline-header h5{
+
+    font-size:18px;
+
+    margin:0;
+
     color:#1E3A8A;
-    font-size:48px;
-    font-weight:700;
+
 }
 
-.hero h3{
-    color:#D4A017;
-    line-height:1.5;
-    font-size:24px;
-    font-weight:600;
+.company{
+
+    font-size:14px;
+
+    color:#666;
+
 }
 
-.hero p{
-    margin-top:20px;
-    font-size:17px;
+.timeline-date{
+
+    font-size:13px;
+
+    background:#EEF2FF;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    color:#1E3A8A;
+
+}
+
+.timeline-body ul{
+
+    margin:0;
+
+    padding-left:18px;
+
+}
+
+.timeline-body li{
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+}
+
+.tech-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.tech-badges span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
 }
 .experience-info{
 
@@ -252,6 +611,1090 @@ body{
 
 }
 
+/*==================================================
+            RAPIDNOTES & VIDEO LECTURES
+==================================================*/
+
+#rapidnotes{
+
+    background:#f8fafc;
+
+}
+
+/*==========================
+      Main Card
+==========================*/
+
+.rapidnotes-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:50px;
+
+}
+
+.channel-logo{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#ff0000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.rapidnotes-card h3{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    color:#1E3A8A;
+
+}
+
+.rapidnotes-card p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+/*==========================
+      Tags
+==========================*/
+
+.rapid-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.rapid-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/*==========================
+      Right Card
+==========================*/
+
+.channel-info{
+
+    background:#F8FAFC;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    border-left:5px solid #D4A017;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    font-size:14px;
+
+}
+
+.info-row span{
+
+    color:#666;
+
+}
+
+.info-row strong{
+
+    color:#1E3A8A;
+
+}
+
+/*==========================
+      Featured Video
+==========================*/
+
+.featured-video{
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+.featured-video iframe{
+
+    width:100%;
+
+    height:450px;
+
+}
+
+/*==========================
+      Video Cards
+==========================*/
+
+.video-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.video-card iframe{
+
+    width:100%;
+
+    height:250px;
+
+}
+
+.video-content{
+
+    padding:18px;
+
+}
+
+.video-content h5{
+
+    font-size:18px;
+
+    color:#1E3A8A;
+
+    margin-bottom:10px;
+
+}
+
+.video-content p{
+
+    font-size:14px;
+
+    color:#666;
+
+    line-height:1.6;
+
+    min-height:60px;
+
+}
+
+/*==========================
+      Statistics
+==========================*/
+
+.channel-stats{
+
+    margin-top:35px;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.stat-card h3{
+
+    color:#1E3A8A;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+    color:#666;
+
+}
+
+/*==========================
+      Playlist
+==========================*/
+
+.playlist-title{
+
+    text-align:center;
+
+    margin:50px 0 30px;
+
+    color:#1E3A8A;
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+
+/*==========================
+      Buttons
+==========================*/
+
+.youtube-btn{
+
+    background:#ff0000;
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+.youtube-btn:hover{
+
+    background:#cc0000;
+
+    color:#fff;
+
+}
+
+/*==========================
+      Responsive
+==========================*/
+
+@media(max-width:992px){
+
+.rapidnotes-card{
+
+    padding:25px;
+
+}
+
+.channel-info{
+
+    margin-top:30px;
+
+}
+
+.featured-video iframe{
+
+    height:380px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.rapidnotes-card{
+
+    padding:20px;
+
+}
+
+.channel-logo{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:28px;
+
+}
+
+.rapidnotes-card h3{
+
+    font-size:24px;
+
+}
+
+.featured-video iframe{
+
+    height:300px;
+
+}
+
+.video-card iframe{
+
+    height:220px;
+
+}
+
+.stat-card{
+
+    margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.rapidnotes-card{
+
+    padding:18px;
+
+}
+
+.channel-logo{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:24px;
+
+}
+
+.rapidnotes-card h3{
+
+    font-size:22px;
+
+}
+
+.featured-video iframe{
+
+    height:220px;
+
+}
+
+.video-card iframe{
+
+    height:200px;
+
+}
+
+.rapid-tags{
+
+    gap:8px;
+
+}
+
+.rapid-tags span{
+
+    font-size:12px;
+
+    padding:6px 12px;
+
+}
+
+.info-row{
+
+    flex-direction:column;
+
+    gap:3px;
+
+}
+
+.stat-card h3{
+
+    font-size:28px;
+
+}
+
+}
+
+/*==================================================
+            RESEARCH & PUBLICATIONS
+==================================================*/
+
+#research{
+
+    background:#f8fafc;
+
+}
+
+/*==============================
+        Main Card
+==============================*/
+
+.research-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/*==============================
+        Publication
+==============================*/
+
+.publication{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+}
+
+.publication-icon{
+
+    width:80px;
+
+    height:80px;
+
+    min-width:80px;
+
+    border-radius:50%;
+
+    background:#EEF2FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#1E3A8A;
+
+    font-size:34px;
+
+}
+
+.publication-content h4{
+
+    color:#1E3A8A;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.publication-content p{
+
+    font-size:15px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+.publication-links{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+/*==============================
+        Research Info
+==============================*/
+
+.research-info{
+
+    background:#F8FAFC;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    border-left:5px solid #D4A017;
+
+}
+
+.research-info h5{
+
+    color:#1E3A8A;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #e9ecef;
+
+}
+
+.info-item:last-child{
+
+    border-bottom:none;
+
+    margin-bottom:0;
+
+}
+
+.info-item strong{
+
+    color:#333;
+
+    font-size:14px;
+
+}
+
+.info-item span{
+
+    color:#1E3A8A;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/*==============================
+        Tags
+==============================*/
+
+.research-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.research-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.research-tags span:hover{
+
+    background:#1E3A8A;
+
+    color:#fff;
+
+}
+
+/*==============================
+        Future Goals
+==============================*/
+
+.future-list{
+
+    padding-left:18px;
+
+    margin-top:15px;
+
+}
+
+.future-list li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/*==============================
+        Publication Badge
+==============================*/
+
+.badge{
+
+    font-size:13px;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+}
+
+/*==============================
+        Buttons
+==============================*/
+
+.publication-links .btn{
+
+    border-radius:30px;
+
+    padding:10px 20px;
+
+    font-size:14px;
+
+}
+
+/*==============================
+        Divider
+==============================*/
+
+.research-card hr{
+
+    margin:35px 0;
+
+}
+
+/*==================================================
+                Responsive
+==================================================*/
+
+@media(max-width:992px){
+
+.publication{
+
+    flex-direction:column;
+
+}
+
+.publication-icon{
+
+    margin-bottom:10px;
+
+}
+
+.research-info{
+
+    margin-top:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.research-card{
+
+    padding:25px;
+
+}
+
+.publication-content h4{
+
+    font-size:20px;
+
+}
+
+.publication-content p{
+
+    font-size:14px;
+
+}
+
+.publication-links{
+
+    flex-direction:column;
+
+}
+
+.publication-links .btn{
+
+    width:100%;
+
+}
+
+.research-tags{
+
+    gap:8px;
+
+}
+
+.future-list{
+
+    margin-top:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.research-card{
+
+    padding:20px;
+
+}
+
+.publication{
+
+    gap:18px;
+
+}
+
+.publication-icon{
+
+    width:65px;
+
+    height:65px;
+
+    min-width:65px;
+
+    font-size:28px;
+
+}
+
+.publication-content h4{
+
+    font-size:18px;
+
+}
+
+.research-info{
+
+    padding:18px;
+
+}
+
+.info-item{
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+.research-tags span{
+
+    font-size:12px;
+
+    padding:7px 12px;
+
+}
+
+}
+
+/*==================================================
+                GITHUB
+==================================================*/
+
+#github{
+
+background:#f8fafc;
+
+}
+
+
+
+.portfolio-heading{
+
+font-size:26px;
+
+margin-bottom:30px;
+
+color:#1E3A8A;
+
+font-weight:600;
+
+text-align:center;
+
+}
+
+.project-card{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+height:100%;
+
+transition:.3s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.project-card h4{
+
+font-size:20px;
+
+color:#1E3A8A;
+
+margin-bottom:12px;
+
+}
+
+.project-card p{
+
+font-size:14px;
+
+line-height:1.8;
+
+}
+
+.project-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+.project-tags span{
+
+background:#EEF2FF;
+
+padding:8px 15px;
+
+border-radius:20px;
+
+font-size:13px;
+
+color:#1E3A8A;
+
+}
+
+@media(max-width:768px){
+
+.github-profile{
+
+padding:20px;
+
+}
+
+.github-avatar{
+
+width:70px;
+
+height:70px;
+
+}
+
+.github-stat{
+
+margin-bottom:15px;
+
+}
+
+}
+
+/* ==========================================
+   GitHub Portfolio
+========================================== */
+
+.github-profile-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.github-avatar{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    border:5px solid #1E3A8A;
+
+    object-fit:cover;
+
+}
+
+.github-stat{
+
+    text-align:center;
+
+    padding:20px;
+
+    background:#F8FAFC;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.github-stat:hover{
+
+    background:#EEF2FF;
+
+}
+
+.github-stat h4{
+
+    color:#1E3A8A;
+
+    font-weight:700;
+
+}
+
+.repo-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.repo-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.repo-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.repo-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
 /* ==========================================
    Buttons
 ========================================== */
@@ -335,6 +1778,18 @@ body{
     transform:translateY(-5px);
 
 }
+section {
+    padding: 60px 0;
+}
+
+.skill-card,
+.project-card,
+.experience-card,
+.research-card,
+.certificate-card,
+.contact-card {
+    padding: 24px;
+}
 
 /* ==========================================
    Section Title
@@ -384,27 +1839,883 @@ body{
 
 }
 
-/* ==========================================
-   About
-========================================== */
+/*==============================
+        PTE
+==============================*/
 
-#about{
+#pte{
 
-    background:white;
+    background:#f8fafc;
 
 }
 
-#about p{
+.pte-card{
 
-    font-size:18px;
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.score-box{
+
+    background:#EEF2FF;
+
+    border-left:5px solid #D4A017;
+
+    border-radius:18px;
+
+    padding:35px;
 
     text-align:center;
 
-    max-width:900px;
+}
 
-    margin:auto;
+.score-box h1{
+
+    font-size:70px;
+
+    color:#1E3A8A;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+.score-box span{
+
+    font-size:16px;
+
+    color:#555;
+
+}
+
+.score-box hr{
+
+    margin:20px 0;
+
+}
+
+.score-box p{
+
+    color:#555;
+
+}
+
+.pte-card h3{
+
+    color:#1E3A8A;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.pte-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.pte-score{
+
+    background:#F8FAFC;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-left:4px solid #1E3A8A;
+
+}
+
+.pte-score span{
+
+    color:#666;
+
+}
+
+.pte-score strong{
+
+    color:#1E3A8A;
+
+    font-size:18px;
+
+}
+
+.pte-highlights{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.pte-highlights span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+}
+
+.notes-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.notes-card h4{
+
+    color:#1E3A8A;
+
+}
+
+.notes-card p{
+
+    margin-bottom:0;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+.score-box{
+
+    margin-bottom:30px;
+
+}
+
+.notes-card{
+
+    text-align:center;
+
+}
+
+.text-lg-end{
+
+    text-align:center!important;
+
+    margin-top:20px;
+
+}
+
+}
+
+/*==================================
+            SKILLS
+==================================*/
+
+#skills{
+
+    background:#f8fafc;
+
+}
+
+.skill-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.skill-card h4{
+
+    font-size:19px;
+
+    color:#1E3A8A;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+.skill-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.skill-badges span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.skill-badges span:hover{
+
+    background:#1E3A8A;
+
+    color:#fff;
+
+}
+
+@media(max-width:768px){
+
+.skill-card{
+
+    padding:20px;
+
+}
+
+.skill-card h4{
+
+    font-size:17px;
+
+}
+
+.skill-badges span{
+
+    font-size:12px;
+
+    padding:7px 12px;
+
+}
+
+}
+/*==================================
+            ABOUT
+==================================*/
+
+.about-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.about-heading{
+
+    color:#1E3A8A;
+
+    font-size:30px;
+
+    font-weight:600;
 
     margin-bottom:20px;
+
+}
+
+.about-text{
+
+    color:#555;
+
+    font-size:15px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+.about-highlights{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.highlight-item{
+
+    background:#F8FAFC;
+
+    border-radius:14px;
+
+    padding:22px;
+
+    text-align:center;
+
+    border-left:4px solid #1E3A8A;
+
+}
+
+.highlight-item h3{
+
+    color:#1E3A8A;
+
+    font-size:28px;
+
+    margin-bottom:6px;
+
+    font-weight:700;
+
+}
+
+.highlight-item p{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+.about-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    justify-content:center;
+
+}
+
+.about-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:9px 18px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+@media(max-width:768px){
+
+.about-card{
+
+    padding:25px;
+
+}
+
+.about-heading{
+
+    font-size:24px;
+
+}
+
+.about-highlights{
+
+    margin-top:30px;
+
+}
+
+}
+/*====================================================
+                    EDUCATION
+====================================================*/
+
+#education{
+
+    background:#f8fafc;
+
+}
+
+/*-----------------------------------
+            Main Card
+------------------------------------*/
+
+.education-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:25px 30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+
+}
+
+/*-----------------------------------
+            Header
+------------------------------------*/
+
+.education-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    border-bottom:1px solid #e9ecef;
+
+    padding-bottom:18px;
+
+    margin-bottom:20px;
+
+}
+
+.education-header h4{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#1E3A8A;
+
+    margin-bottom:5px;
+
+}
+
+.education-header i{
+
+    color:#D4A017;
+
+}
+
+.degree{
+
+    font-size:15px;
+
+    color:#666;
+
+    margin-bottom:0;
+
+}
+
+.education-year span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/*-----------------------------------
+            Table
+------------------------------------*/
+
+.education-table{
+
+    margin-bottom:0;
+
+}
+
+.education-table th{
+
+    width:180px;
+
+    color:#1E3A8A;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    padding:8px 0;
+
+}
+
+.education-table td{
+
+    font-size:14px;
+
+    color:#444;
+
+    padding:8px 0;
+
+}
+
+/*-----------------------------------
+            Right Side
+------------------------------------*/
+
+.mini-title{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#1E3A8A;
+
+    margin-bottom:15px;
+
+}
+
+.education-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.education-tags span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/*-----------------------------------
+            Small Cards
+------------------------------------*/
+
+.small-card{
+
+    padding:20px 25px;
+
+}
+
+.small-card h5{
+
+    font-size:18px;
+
+    color:#1E3A8A;
+
+    margin-bottom:5px;
+
+}
+
+.small-card p{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+.score-badge{
+
+    background:#D4A017;
+
+    color:#fff;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/*-----------------------------------
+        Education Highlights
+------------------------------------*/
+
+.education-highlight{
+
+    margin-top:35px;
+
+}
+
+.highlight-box{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    text-align:center;
+
+    height:100%;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.highlight-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.highlight-box i{
+
+    font-size:28px;
+
+    color:#D4A017;
+
+    margin-bottom:15px;
+
+}
+
+.highlight-box h6{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#1E3A8A;
+
+    margin-bottom:10px;
+
+}
+
+.highlight-box p{
+
+    font-size:14px;
+
+    color:#555;
+
+    margin:0;
+
+}
+
+/*-----------------------------------
+            Responsive
+------------------------------------*/
+
+@media(max-width:992px){
+
+.education-header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.education-year{
+
+    align-self:flex-start;
+
+}
+
+.small-card .row{
+
+    row-gap:15px;
+
+}
+
+.text-lg-end{
+
+    text-align:left !important;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.education-card{
+
+    padding:20px;
+
+}
+
+.education-header h4{
+
+    font-size:18px;
+
+}
+
+.degree{
+
+    font-size:14px;
+
+}
+
+.education-table th{
+
+    width:130px;
+
+    font-size:13px;
+
+}
+
+.education-table td{
+
+    font-size:13px;
+
+}
+
+.highlight-box{
+
+    margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.education-card{
+
+    padding:18px;
+
+}
+
+.education-header{
+
+    margin-bottom:15px;
+
+}
+
+.education-header h4{
+
+    font-size:17px;
+
+}
+
+.education-year span{
+
+    display:inline-block;
+
+    margin-top:8px;
+
+}
+
+.education-table th{
+
+    display:block;
+
+    width:100%;
+
+    padding-bottom:2px;
+
+}
+
+.education-table td{
+
+    display:block;
+
+    padding-top:0;
+
+    padding-bottom:12px;
+
+}
+
+.education-tags{
+
+    gap:8px;
+
+}
+
+.education-tags span{
+
+    font-size:12px;
+
+    padding:6px 12px;
+
+}
+
+.small-card{
+
+    text-align:left;
+
+}
+
+.score-badge{
+
+    margin-top:10px;
+
+    display:inline-block;
+
+}
+
+.highlight-box{
+
+    padding:20px;
+
+}
 
 }
 
@@ -506,27 +2817,253 @@ body{
 
 }
 
-/* ==========================================
-   Contact
-========================================== */
+/*==================================
+            CONTACT
+==================================*/
 
-#contact{
+/*====================================
+        CONTACT BUTTONS
+====================================*/
 
-    background:white;
+.contact-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:15px;
+
+    margin-top:30px;
 
 }
 
-#contact h5{
+.contact-btn{
 
-    margin-top:20px;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:15px 20px;
+
+    border-radius:14px;
+
+    text-decoration:none;
 
     font-weight:600;
 
+    transition:.3s;
+
+    color:#fff;
+
+    font-size:15px;
+
 }
 
-#contact p{
+.contact-btn i{
 
-    color:#475569;
+    font-size:22px;
+
+}
+
+/* Gmail */
+
+.email-btn{
+
+    background:#EA4335;
+
+}
+
+/* GitHub */
+
+.github-btn{
+
+    background:#24292F;
+
+}
+
+/* LinkedIn */
+
+.linkedin-btn{
+
+    background:#0A66C2;
+
+}
+
+/* YouTube */
+
+.youtube-btn{
+
+    background:#FF0000;
+
+}
+
+/* ORCID */
+
+.orcid-btn{
+
+    background:#A6CE39;
+
+}
+
+/* Hover */
+
+.contact-btn:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+@media(max-width:768px){
+
+.contact-links{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+#contact{
+
+    background:#f8fafc;
+
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.contact-card h3{
+
+    color:#1E3A8A;
+
+    margin-bottom:25px;
+
+    font-size:22px;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.contact-item i{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+.contact-item h6{
+
+    margin-bottom:5px;
+
+    color:#1E3A8A;
+
+}
+
+.contact-item a{
+
+    text-decoration:none;
+
+    color:#555;
+
+}
+
+.contact-item p{
+
+    margin:0;
+
+    color:#555;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:12px 15px;
+
+    border:1px solid #ddd;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:#1E3A8A;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+@media(max-width:768px){
+
+.contact-card{
+
+    padding:22px;
+
+}
+
+.contact-item{
+
+    gap:15px;
+
+}
+
+.contact-item i{
+
+    width:45px;
+
+    height:45px;
+
+}
 
 }
 
@@ -556,97 +3093,519 @@ footer p{
    Responsive
 ========================================== */
 
-@media(max-width:992px){
+/*==================================================
+            LARGE LAPTOP
+==================================================*/
 
-    .hero{
+@media (max-width:1200px){
 
-        text-align:center;
+.container{
 
-        padding-top:150px;
-
-    }
-
-    .profile-image{
-
-        width:280px;
-
-        height:280px;
-
-        margin-top:40px;
-
-    }
-
-    .social-icons{
-
-        justify-content:center;
-
-    }
+    max-width:1140px;
 
 }
 
-@media(max-width:768px){
+.hero h1{
 
-    .section-title{
-
-        font-size:30px;
-
-    }
-
-    .hero h1{
-
-        font-size:42px;
-
-    }
-
-    .hero h3{
-
-        font-size:24px;
-
-    }
-
-    .hero p{
-
-        font-size:16px;
-
-    }
-
-    .profile-image{
-
-        width:230px;
-
-        height:230px;
-
-    }
+    font-size:34px;
 
 }
 
-@media(max-width:576px){
+.section-title{
 
-    .hero{
+    font-size:30px;
 
-        padding-top:120px;
+}
 
-    }
+.profile-image{
 
-    .btn{
+    width:200px;
 
-        width:100%;
+    height:200px;
 
-        margin-bottom:15px;
+}
 
-    }
+}
 
-    .social-icons a{
 
-        width:45px;
+/*==================================================
+                LAPTOP
+==================================================*/
 
-        height:45px;
+@media (max-width:992px){
 
-        font-size:18px;
+section{
 
-        margin-right:10px;
+    padding:60px 0;
 
-    }
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-social{
+
+    justify-content:center;
+
+}
+
+.hero-skills{
+
+    justify-content:center;
+
+}
+
+.profile-card{
+
+    margin-top:35px;
+
+}
+
+/* Statistics */
+
+.stat-box{
+
+    margin-bottom:20px;
+
+}
+
+/* Experience */
+
+.timeline::before{
+
+    left:10px;
+
+}
+
+.timeline-item{
+
+    padding-left:40px;
+
+}
+
+.timeline-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+}
+
+.timeline-body .row{
+
+    flex-direction:column;
+
+}
+
+
+
+/* Projects */
+
+.project-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Research */
+
+.research-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Contact */
+
+.contact-card{
+
+    margin-bottom:20px;
+
+}
+
+}
+
+
+/*==================================================
+                TABLET
+==================================================*/
+
+@media (max-width:768px){
+
+body{
+
+    font-size:14px;
+
+}
+
+section{
+
+    padding:50px 0;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+.section-subtitle{
+
+    font-size:15px;
+
+}
+
+/* Hero */
+
+.hero{
+
+    padding-top:70px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero h2{
+
+    font-size:18px;
+
+}
+
+.hero-text{
+
+    font-size:14px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+.hero-skills{
+
+    gap:8px;
+
+}
+
+.hero-skills span{
+
+    font-size:12px;
+
+}
+
+.hero-social{
+
+    gap:10px;
+
+}
+
+.profile-image{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+/* Stats */
+
+.stat-box{
+
+    margin-bottom:15px;
+
+}
+
+.stat-box h3{
+
+    font-size:24px;
+
+}
+
+/* Experience */
+
+.timeline-card{
+
+    padding:18px;
+
+}
+
+.timeline-body ul{
+
+    padding-left:18px;
+
+}
+
+.timeline-body li{
+
+    font-size:14px;
+
+}
+
+/* Skills */
+
+.skill-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Projects */
+
+.project-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Videos */
+
+.video-card{
+
+    margin-bottom:20px;
+
+}
+
+/* GitHub */
+
+.repo-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Certificates */
+
+.certificate-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Research */
+
+.research-card{
+
+    margin-bottom:20px;
+
+}
+
+/* PTE */
+
+.score-circle{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+.score-circle h1{
+
+    font-size:50px;
+
+}
+
+/* Contact */
+
+.social-buttons{
+
+    justify-content:center;
+
+}
+
+}
+
+
+/*==================================================
+                MOBILE
+==================================================*/
+
+@media (max-width:576px){
+
+.container{
+
+    padding-left:18px;
+
+    padding-right:18px;
+
+}
+
+section{
+
+    padding:45px 0;
+
+}
+
+.hero-box{
+
+    padding:25px;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero h2{
+
+    font-size:17px;
+
+}
+
+.hero-text{
+
+    font-size:14px;
+
+}
+
+.section-title{
+
+    font-size:26px;
+
+}
+
+.section-subtitle{
+
+    font-size:14px;
+
+}
+
+/* Profile */
+
+.profile-image{
+
+    width:160px;
+
+    height:160px;
+
+}
+
+/* Cards */
+
+.skill-card,
+.project-card,
+.video-card,
+.contact-card,
+.research-card,
+.certificate-card,
+.timeline-card,
+.pte-card{
+
+    padding:18px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    width:100%;
+
+}
+
+/* Stats */
+
+.stat-box{
+
+    padding:16px;
+
+}
+
+.stat-box h3{
+
+    font-size:22px;
+
+}
+
+.stat-box p{
+
+    font-size:13px;
+
+}
+
+/* Badges */
+
+.skill-badges span,
+.tech-badges span,
+.hero-skills span{
+
+    font-size:12px;
+
+    padding:6px 10px;
+
+}
+
+/* Timeline */
+
+.timeline-item{
+
+    padding-left:32px;
+
+}
+
+.timeline::before{
+
+    left:8px;
+
+}
+
+.timeline-dot{
+
+    width:14px;
+
+    height:14px;
+
+}
+
+/* Contact */
+
+.profile-info div{
+
+    font-size:13px;
+
+}
+
+.contact-card p{
+
+    font-size:14px;
+
+}
+
+footer{
+
+    font-size:13px;
+
+}
 
 }
 /* ==========================================
