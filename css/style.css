@@ -1305,7 +1305,29 @@ font-size:14px;
 /*==============================
         Future Goals
 ==============================*/
+.future-goals{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.future-goals span{
 
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
 .future-list{
 
     padding-left:18px;
