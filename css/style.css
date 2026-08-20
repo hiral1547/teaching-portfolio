@@ -1276,6 +1276,24 @@ font-size:14px;
 
 }
 
+.future-goals span{
+
+    background:#EEF2FF;
+
+    color:#1E3A8A;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
 .research-tags span:hover{
 
     background:#1E3A8A;
@@ -1378,6 +1396,10 @@ font-size:14px;
 
     padding:25px;
 
+}
+
+.future-goals{
+   margin-top: 25px;
 }
 
 .publication-content h4{
