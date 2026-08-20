@@ -1421,7 +1421,6 @@ font-size:14px;
 }
 
 .future-goals{
-   margin-top: 25px;
    gap: 8px;
 }
 
@@ -1450,7 +1449,7 @@ font-size:14px;
 }
 
 .research-tags{
-
+    margin-bottom: 20px;
     gap:8px;
 
 }
