@@ -2602,6 +2602,10 @@ section {
 
 }
 
+.education-highlight .edu-card{
+   margin-bottom: 10px;
+}
+
 .education-header h4{
 
     font-size:18px;
